@@ -18,3 +18,7 @@ class TestPassword:
     def test_good_password(self):
         password = 'aA1_aaaa'
         assert isValid(password) is True
+
+    def test_password_should_have_minimal_length(self):
+        password = 'aA1_aaa'
+        assert isValid(password) is False
