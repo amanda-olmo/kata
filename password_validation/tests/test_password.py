@@ -22,3 +22,7 @@ class TestPassword:
     def test_password_should_have_minimal_length(self):
         password = 'aA1_aaa'
         assert isValid(password) is False
+
+    def test_password_should_have_at_least_one_uppercase_letter(self):
+        password = '123456_a'
+        assert isValid(password) is False
