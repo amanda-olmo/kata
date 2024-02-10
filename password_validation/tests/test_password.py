@@ -34,3 +34,7 @@ class TestPassword:
     def test_password_should_have_at_least_one_number(self):
         password = 'aaaaaa_A'
         assert isValid(password) is False
+
+    def test_password_should_have_at_least_one_underscore(self):
+        password = 'aaaaaa1A'
+        assert isValid(password) is False
