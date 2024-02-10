@@ -8,4 +8,4 @@ Conditions
 """
 
 def isValid(password):
-    return True
+    return len(password) >= 8
