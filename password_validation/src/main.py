@@ -8,4 +8,5 @@ Conditions
 """
 
 def isValid(password):
-    return len(password) >= 8
+    has_upper_case = any([letter.isupper() for letter in password])
+    return len(password) >= 8 and has_upper_case
